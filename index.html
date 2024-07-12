@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>General Services Center</title>
+
     <style>
         /* Global styles */
         body {
@@ -16,7 +17,7 @@
 
         h1, h2 {
             color: #FFD200; /* SJSU gold */
-            text-align: center;
+            text-align: left;
         }
 
         select {
@@ -39,7 +40,7 @@
         .language-section {
             display: none;
             margin-top: 20px;
-        }
+        } 
 
         .map-container {
             text-align: left;
@@ -73,7 +74,8 @@
             transition: background-color 0.3s ease;
         }
 
-        .language-header:hover {
+        .language-header:hover,
+        .language-header.active {
             background-color: #0055A5; /* SJSU blue */
             color: #FFFFFF; /* White text */
         }
@@ -88,6 +90,7 @@
             text-align: left;
         }
     </style>
+
 </head>
 <body>
     <!-- Header and Language Selection -->
@@ -95,25 +98,123 @@
         <h1>General Services Center</h1>
         <p>Select your language:</p>
         <ul>
-            <li class="language-header" onclick="showLanguage('english')">English</li>
-            <li class="language-header" onclick="showLanguage('portuguese')">Português</li>
-            <li class="language-header" onclick="showLanguage('russian')">Русский</li>
-            <li class="language-header" onclick="showLanguage('japanese')">日本語</li>
-            <li class="language-header" onclick="showLanguage('mandarin')">中文</li>
-            <li class="language-header" onclick="showLanguage('french')">Français</li>
-            <li class="language-header" onclick="showLanguage('italian')">Italiano</li>
-            <li class="language-header" onclick="showLanguage('german')">Deutsch</li>
+            <li class="language-header" onclick="showLanguage('english')">🇺🇸 English</li>
+            <li class="language-header" onclick="showLanguage('portuguese')">🇧🇷 Português</li>
+            <li class="language-header" onclick="showLanguage('russian')">🇷🇺 Русский</li>
+            <li class="language-header" onclick="showLanguage('japanese')">🇯🇵 日本語</li>
+            <li class="language-header" onclick="showLanguage('mandarin')">🇨🇳 中文</li>
+            <li class="language-header" onclick="showLanguage('french')">🇫🇷 Français</li>
+            <li class="language-header" onclick="showLanguage('italian')">🇮🇹 Italiano</li>
+            <li class="language-header" onclick="showLanguage('german')">🇩🇪 Deutsch</li>
         </ul>
     </div>
-
-    <!-- University Map -->
-    <div class="map-container">
-        <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+    <!-- Content sections for different languages -->
+    <div class="language-section" id="english">
+        <h1>Additional Pamphlet Information</h1>
+        <p>Welcome! Here you will find additional information about the services offered by the University. We offer a variety of services to support our students, including academic assistance, psychological support, and much more.</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
     </div>
+
+    <div class="language-section" id="portuguese">
+        <h1>Informações Adicionais do Folheto</h1>
+        <p>Bem-vindo! Aqui você encontrará informações adicionais sobre os serviços oferecidos pela Universidade. Oferecemos uma variedade de serviços para apoiar nossos alunos, incluindo assistência acadêmica, apoio psicológico e muito mais.</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="Mapa da Universidade Estadual de San Jose">
+        </div>
+    </div>
+
+    <div class="language-section" id="russian">
+        <h1>Дополнительная информация о буклете</h1>
+        <p>Добро пожаловать! Здесь вы найдете дополнительную информацию о услугах, предлагаемых университетом. Мы предлагаем различные услуги для поддержки наших студентов, включая академическую помощь, психологическую поддержку и многое другое.</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="Карта Сан-Хосе Государственного Университета">
+        </div>
+    </div>
+
+    <div class="language-section" id="japanese">
+        <h1>パンフレットの追加情報</h1>
+        <p>ようこそ！ここでは、大学が提供するサービスに関する追加情報をご覧いただけます。私たちは学業支援、心理支援など、さまざまなサービスを提供しています。</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="サンノゼ州立大学の地図">
+        </div>
+    </div>
+
+    <div class="language-section" id="mandarin">
+        <h1>小册子的额外信息</h1>
+        <p>欢迎！在这里，您将找到有关大学提供服务的额外信息。我们提供各种服务来支持我们的学生，包括学术帮助、心理支持等。</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="圣荷西州立大学地图">
+        </div>
+    </div>
+
+    <div class="language-section" id="french">
+        <h1>Informations supplémentaires sur la brochure</h1>
+        <p>Bienvenue ! Vous trouverez ici des informations supplémentaires sur les services offerts par l'Université. Nous proposons une variété de services pour soutenir nos étudiants, notamment une aide académique, un soutien psychologique, et bien plus encore.</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="Plan de l'Université d'État de San José">
+        </div>
+    </div>
+
+    <div class="language-section" id="italian">
+        <h1>Informazioni aggiuntive sulla brochure</h1>
+        <p>Benvenuti! Qui troverete informazioni aggiuntive sui servizi offerti dall'Università. Offriamo una varietà di servizi per supportare i nostri studenti, tra cui assistenza accademica, supporto psicologico e molto altro.</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="Mappa dell'Università Statale di San Jose">
+        </div>
+    </div>
+
+    <div class="language-section" id="german">
+        <h1>Zusätzliche Informationen zur Broschüre</h1>
+        <p>Willkommen! Hier finden Sie zusätzliche Informationen zu den von der Universität angebotenen Dienstleistungen. Wir bieten eine Vielzahl von Dienstleistungen zur Unterstützung unserer Studierenden an, darunter akademische Unterstützung, psychologische Betreuung und vieles mehr.</p>
+        <!-- University Map -->
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="Karte der San Jose State University">
+        </div>
+    </div>
+
+    <script>
+        // Function to show language section based on selection
+        function showLanguage(language) {
+            // Hide all language sections
+            var sections = document.querySelectorAll('.language-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show selected language section
+            document.getElementById(language).style.display = 'block';
+
+            // Highlight selected language button
+            var languageHeaders = document.querySelectorAll('.language-header');
+            languageHeaders.forEach(function(header) {
+                header.classList.remove('active');
+                if (header.innerText.toLowerCase() === language) {
+                    header.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html> 
     
     <!-- Language Sections -->
     <!-- English Content -->
     <div id="englishContent" class="language-section">
+        <h1>🇺🇸   Additional Pamphlet Information</h1>
+        <p>Welcome! Here you will find additional information about the services offered by the University. We offer a variety of services to support our students, including academic assistance, psychological support, and much more.</p>
+        <!-- University Map -->
+    <div class="map-container">
+        <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+    </div>
         <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/English Audio  2.m4a" type="audio/mp4">
             Your browser does not support the audio element.
@@ -135,12 +236,16 @@
     </div>
   <!-- Brazilian Portuguese Content -->
 <div id="portugueseContent" class="language-section">
-    <audio controls>
+    <h1>🇧🇷  Informações Adicionais do Folheto</h1>
+        <p>Bem-vindo! Aqui você encontrará informações adicionais sobre os serviços oferecidos pela Universidade. Oferecemos uma variedade de serviços para apoiar nossos alunos, incluindo assistência acadêmica, apoio psicológico e muito mais.</p>
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
+        <audio controls>
         <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Portuguese.m4a" type="audio/mp4">
         Your browser does not support the audio element.
     </audio>
-    <h1>Informações Extras do Panfleto</h1> <p> Bem-vindo! Aqui você encontrará informações adicionais sobre os serviços oferecidos pela Universidade. Nós oferecemos uma variedade de serviços para apoiar nossos alunos, incluindo assistência acadêmica, suporte psicológico, e muito mais.
-    <p><h2>Centro de Serviços Gerais:</h2> FALE CONOSCO: Diaz Compean Student Union, 1º andar, Sala 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <p><h2>Centro de Serviços Gerais:</h2> FALE CONOSCO: Diaz Compean Student Union, 1º andar, Sala 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
     <ul>
         <li class="service"><h2>Conta de Confiança do Campus para Organizações Estudantis</h2> <p class="service-description">Organizações estudantis reconhecidas podem abrir uma conta bancária no campus. Processamento gratuito de cheques, contabilidade, pedidos de compra, etc. O CSG está aberto pessoalmente e online.</p></li>
         <li class="service"><h2>Programa de Livros Didáticos A.S. Acessíveis</h2> <p class="service-description">Estudantes que recebem bolsas de estudo são elegíveis para receber um voucher de $200 para compra ou aluguel de livros didáticos na livraria SJSU.</p></li>
@@ -150,6 +255,11 @@
 </div>
     <!-- Russian Content -->
     <div id="russianContent" class="language-section">
+        <h1>🇷🇺  Дополнительная информация о буклете</h1>
+        <p>Добро пожаловать! Здесь вы найдете дополнительную информацию о услугах, предлагаемых университетом. Мы предлагаем различные услуги для поддержки наших студентов, включая академическую помощь, психологическую поддержку и многое другое.</p>
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
         <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Russian language .m4a" type="audio/mp4">
             Your browser does not support the audio element.
@@ -171,7 +281,12 @@
     </div>
     <!-- Japanese Content -->
     <div id="japaneseContent" class="language-section">
-        <audio controls>
+        <h1>🇯🇵  パンフレットの追加情報</h1>
+        <p>ようこそ！ここでは、大学が提供するサービスに関する追加情報をご覧いただけます。私たちは学業支援、心理支援など、さまざまなサービスを提供しています。</p>
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
+         <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Japanese language .m4a" type="audio/mp4">
             Your browser does not support the audio element.
         </audio>
@@ -192,7 +307,12 @@
     </div>
     <!-- Mandarin Chinese Content -->
     <div id="mandarinContent" class="language-section">
-        <audio controls>
+        <h1>🇨🇳 小册子的额外信息</h1>
+        <p>欢迎！在这里，您将找到有关大学提供服务的额外信息。我们提供各种服务来支持我们的学生，包括学术帮助、心理支持等。</p>
+            <div class="map-container">
+                <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+            </div>
+            <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Mandarin Language .m4a" type="audio/mp4">
             Your browser does not support the audio element.
         </audio>
@@ -213,6 +333,11 @@
     </div>
     <!-- French Content -->
     <div id="frenchContent" class="language-section">
+        <h1>🇫🇷  Informations supplémentaires sur la brochure</h1>
+        <p>Bienvenue ! Vous trouverez ici des informations supplémentaires sur les services offerts par l'Université. Nous proposons une variété de services pour soutenir nos étudiants, notamment une aide académique, un soutien psychologique, et bien plus encore.</p>
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
         <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/French language .m4a" type="audio/mp4">
             Your browser does not support the audio element.
@@ -234,7 +359,12 @@
     </div>
     <!-- Italian Content -->
     <div id="italianContent" class="language-section">
-        <audio controls>
+        <h1>🇮🇹 Informazioni aggiuntive sulla brochure</h1>
+        <p>Benvenuti! Qui troverete informazioni aggiuntive sui servizi offerti dall'Università. Offriamo una varietà di servizi per supportare i nostri studenti, tra cui assistenza accademica, supporto psicologico e molto altro.</p>
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
+         <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Italian language .m4a" type="audio/mp4">
             Your browser does not support the audio element.
         </audio>
@@ -255,7 +385,12 @@
     </div>
     <!-- German Content -->
     <div id="germanContent" class="language-section">
-        <audio controls>
+        <h1>🇩🇪 Zusätzliche Informationen zur Broschüre</h1>
+        <p>Willkommen! Hier finden Sie zusätzliche Informationen zu den von der Universität angebotenen Dienstleistungen. Wir bieten eine Vielzahl von Dienstleistungen zur Unterstützung unserer Studierenden an, darunter akademische Unterstützung, psychologische Betreuung und vieles mehr.</p>
+        <div class="map-container">
+            <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+        </div>
+         <audio controls>
             <source src="/Users/rafaelalunardelli/Desktop/Languages Project/German Audio .m4a" type="audio/mp4">
             Your browser does not support the audio element.
         </audio>
