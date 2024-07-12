@@ -1,0 +1,94 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark gray text */
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #003366; /* SJSU blue */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Language Selector styles */
+.language-selector {
+    margin-bottom: 20px;
+}
+
+.language-selector select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+/* Content section styles */
+.language-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.language-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.language-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.language-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.language-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #003366; /* SJSU blue */
+    color: #FFFFFF; /* White text */
+}

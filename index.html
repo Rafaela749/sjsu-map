@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Services Center</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* White background */
+            color: #0055A5; /* SJSU blue text */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #FFD200; /* SJSU gold */
+            text-align: center;
+        }
+
+        select {
+            background-color: #0055A5; /* SJSU blue */
+            color: #FFFFFF; /* White text */
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .language-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .map-container {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align:left;
+            margin-bottom: 30px;
+        }
+
+        .language-header {
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 16px;
+            background-color: #FFD200; /* SJSU gold */
+            color: #0055A5; /* SJSU blue text */
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-header:hover {
+            background-color: #0055A5; /* SJSU blue */
+            color: #FFFFFF; /* White text */
+        }
+
+        .service {
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            font-family: 'Arial';
+            font-size: 25px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Language Selection -->
+    <div class="header">
+        <h1>General Services Center</h1>
+        <p>Select your language:</p>
+        <ul>
+            <li class="language-header" onclick="showLanguage('english')">English</li>
+            <li class="language-header" onclick="showLanguage('portuguese')">Português</li>
+            <li class="language-header" onclick="showLanguage('russian')">Русский</li>
+            <li class="language-header" onclick="showLanguage('japanese')">日本語</li>
+            <li class="language-header" onclick="showLanguage('mandarin')">中文</li>
+            <li class="language-header" onclick="showLanguage('french')">Français</li>
+            <li class="language-header" onclick="showLanguage('italian')">Italiano</li>
+            <li class="language-header" onclick="showLanguage('german')">Deutsch</li>
+        </ul>
+    </div>
+
+    <!-- University Map -->
+    <div class="map-container">
+        <img src="/Users/rafaelalunardelli/Desktop/Languages Project/Imagem.png" alt="San Jose State University Map">
+    </div>
+    
+    <!-- Language Sections -->
+    <!-- English Content -->
+    <div id="englishContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/English Audio  2.m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>Contact Us: </h2> Diaz Compean Student Union, 1st Floor, Suite 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>Student Organization Campus Trust Accounts</h2> <p class="service-description">Recognized Student Organizations can open a campus banking account. Free check processing, bookkeeping, purchase orders and more. GSC is open in person and Online.</p></li>
+            <li class="service"><h2>A.S. affordable textbook program</h2> <p class="service-description">Students who receive financial aid grants are eligible for a $200 voucher to buy or rent a textbook at the SJSU bookstore.</p></li>
+            <li class="service"><h2>SMARTPASS CLIPPER Card Pickup</h2> <p class="service-description">Students picking up SmartPass Clipper card for the first time must submit an online request form, bring Tower ID, and pay $3 fee. For more information, visit ts.sjsu.edu.</p></li>
+            <li class="service"><h2>Discount Tickets for ACE TRAIN and HWY 17 EXPRESS</h2> <p class="service-description">Discounted tickets for SJSU matriculated students and staff.</p></li>
+            <li class="service"><h2>International Student Identity Card (ISIC)</h2> <p class="service-description">Students may receive discounts with the ISIC Card. For more information, visit isic.org.</p></li>
+            <li class="service"><h2>Mail Drop-off</h2> <p class="service-description">U.S. mail with proper postage may be dropped off in our conveniently-located mail drop box.</p></li>
+            <li class="service"><h2>Cash Checks</h2> <p class="service-description">The center can cash personal checks up to $25.</p></li>
+            <li class="service"><h2>PG&E Payments</h2> <p class="service-description">Same-day payments free-of-charge. Cash or check only.</p></li>
+            <li class="service"><h2>Fax Service</h2> <p class="service-description">Pages may be faxed out or received for $1 per page. For received faxed pages, person must be present at time of transaction.</p></li>
+            <li class="service"><h2>Notarization</h2> <p class="service-description">$15 per signature. Contact trinh.thai@sjsu.edu. to schedule an appointment.</p></li>
+            <li class="service"><h2>Money Orders</h2> <p class="service-description">A maximum of $500 per money order may be made with $1 charge per money order. CASH ONLY</p></li>
+        </ul>
+    </div>
+  <!-- Brazilian Portuguese Content -->
+<div id="portugueseContent" class="language-section">
+    <audio controls>
+        <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Portuguese.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+    <h1>Informações Extras do Panfleto</h1> <p> Bem-vindo! Aqui você encontrará informações adicionais sobre os serviços oferecidos pela Universidade. Nós oferecemos uma variedade de serviços para apoiar nossos alunos, incluindo assistência acadêmica, suporte psicológico, e muito mais.
+    <p><h2>Centro de Serviços Gerais:</h2> FALE CONOSCO: Diaz Compean Student Union, 1º andar, Sala 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+    <ul>
+        <li class="service"><h2>Conta de Confiança do Campus para Organizações Estudantis</h2> <p class="service-description">Organizações estudantis reconhecidas podem abrir uma conta bancária no campus. Processamento gratuito de cheques, contabilidade, pedidos de compra, etc. O CSG está aberto pessoalmente e online.</p></li>
+        <li class="service"><h2>Programa de Livros Didáticos A.S. Acessíveis</h2> <p class="service-description">Estudantes que recebem bolsas de estudo são elegíveis para receber um voucher de $200 para compra ou aluguel de livros didáticos na livraria SJSU.</p></li>
+        <li class="service"><h2>Recepção do Cartão SmartPass Clipper</h2> <p class="service-description">Estudantes recebendo o cartão SmartPass Clipper pela primeira vez devem preencher um formulário online, trazer o ID da Tower e pagar $3. Para mais informações, visite ts.sjsu.edu.</p></li>
+        <!-- Add more translated services as needed -->
+    </ul>
+</div>
+    <!-- Russian Content -->
+    <div id="russianContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Russian language .m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>Свяжитесь с нами:  </h2> СВЯЖИТЕСЬ С НАМИ: Diaz Compean Student Union, 1-й этаж, кабинет 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>Счета доверительного управления кампусом организации студентов</h2> <p class="service-description">Признанные организации студентов могут открыть банковский счет на кампусе. Бесплатная обработка чеков, бухгалтерия, заказы на покупку и многое другое. GSC открыт лично и онлайн.</p></li>
+            <li class="service"><h2>A.S. доступная программа учебников</h2> <p class="service-description">Студенты, получающие гранты на обучение, имеют право на ваучер на $200 для покупки или аренды учебника в книжном магазине SJSU.</p></li>
+            <li class="service"><h2>Поднятие карты SmartPass Clipper</h2> <p class="service-description">Студенты, поднимающие карту SmartPass Clipper в первый раз, должны отправить онлайн-форму запроса, принести Tower ID и оплатить $3. Для получения дополнительной информации посетите ts.sjsu.edu.</p></li>
+            <li class="service"><h2>Скидочные билеты на поезд ACE и HWY 17 EXPRESS</h2> <p class="service-description">Скидочные билеты для студентов и сотрудников SJSU.</p></li>
+            <li class="service"><h2>Международная студенческая идентификационная карта (ISIC)</h2> <p class="service-description">Студенты могут получить скидки с картой ISIC. Для получения дополнительной информации посетите isic.org.</p></li>
+            <li class="service"><h2>Сдача почты</h2> <p class="service-description">Почта США с правильной почтовой оплатой может быть сдана в нашем удобно расположенном ящике для почты.</p></li>
+            <li class="service"><h2>Обналичивание чеков</h2> <p class="service-description">Центр может обналичивать личные чеки до $25.</p></li>
+            <li class="service"><h2>Платежи PG&E</h2> <p class="service-description">Ежедневные платежи бесплатно. Только наличные или чек.</p></li>
+            <li class="service"><h2>Факсовое обслуживание</h2> <p class="service-description">Страницы можно отправлять или получать по факсу за $1 за страницу. Для получения страниц по факсу человек должен присутствовать во время сделки.</p></li>
+            <li class="service"><h2>Нотариальные услуги</h2> <p class="service-description">$15 за подпись. Свяжитесь с trinh.thai@sjsu.edu для записи на прием.</p></li>
+            <li class="service"><h2>Денежные переводы</h2> <p class="service-description">Максимальная сумма перевода $500 с комиссией $1 за перевод. ТОЛЬКО НАЛИЧНЫЕ</p></li>
+        </ul>
+    </div>
+    <!-- Japanese Content -->
+    <div id="japaneseContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Japanese language .m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>お問い合わせ： </h2> お問い合わせ先：Diaz Compean Student Union, 1階, スイート1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>学生団体キャンパストラストアカウント</h2> <p class="service-description">認定された学生団体はキャンパス銀行口座を開設することができます。無料の小切手処理、簿記、発注など。GSCは対面とオンラインで開かれています。</p></li>
+            <li class="service"><h2>A.S.手頃な教科書プログラム</h2> <p class="service-description">奨学金を受給する学生は、SJSUブックストアで教科書を購入またはレンタルするための$200のバウチャーを利用できます。</p></li>
+            <li class="service"><h2>SmartPass Clipperカードの受け取り</h2> <p class="service-description">初めてSmartPass Clipperカードを受け取る学生は、オンライン申請フォームを提出し、Tower IDを持参し、$3の手数料を支払う必要があります。詳細については、ts.sjsu.eduをご覧ください。</p></li>
+            <li class="service"><h2>ACE TRAINおよびHWY 17 EXPRESSの割引チケット</h2> <p class="service-description">SJSU在籍の学生およびスタッフ向けの割引チケット。</p></li>
+            <li class="service"><h2>国際学生証（ISIC）</h2> <p class="service-description">ISICカードで割引が受けられます。詳細については、isic.orgをご覧ください。</p></li>
+            <li class="service"><h2>郵送</h2> <p class="service-description">適切な郵送料を支払った米国郵便は、便利な場所にある私たちの郵便箱に置くことができます。</p></li>
+            <li class="service"><h2>小切手の現金化</h2> <p class="service-description">センターは、最大25ドルまでの個人小切手を現金化することができます。</p></li>
+            <li class="service"><h2>PG&Eの支払い</h2> <p class="service-description">当日の支払いは無料です。現金または小切手のみ。</p></li>
+            <li class="service"><h2>ファックスサービス</h2> <p class="service-description">1ページにつき1ドルでファックスを送受信できます。ファックスで受信したページの場合、取引時に当事者が立ち会う必要があります。</p></li>
+            <li class="service"><h2>公証サービス</h2> <p class="service-description">1署名につき15ドル。トリン.タイ（trinh.thai@sjsu.edu）に連絡して予約してください。</p></li>
+            <li class="service"><h2>送金</h2> <p class="service-description">送金額の上限は500ドルで、送金1回につき1ドルの手数料がかかります。現金のみです。</p></li>
+        </ul>
+    </div>
+    <!-- Mandarin Chinese Content -->
+    <div id="mandarinContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Mandarin Language .m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>联系我们： </h2> 联系我们：Diaz Compean Student Union, 1楼, 1800室 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>校园学生组织信托账户</h2> <p class="service-description">认可的学生组织可以在校园开设银行账户。免费支票处理、会计、订购等服务。GSC提供面对面和在线服务。</p></li>
+            <li class="service"><h2>A.S.经济教科书计划</h2> <p class="service-description">获得奖学金的学生可以获得200美元的书籍购买或租赁券，可在SJSU书店使用。</p></li>
+            <li class="service"><h2>SmartPass Clipper卡领取</h2> <p class="service-description">首次领取SmartPass Clipper卡的学生需提交在线申请表格，携带Tower ID并支付3美元。欲了解更多信息，请访问ts.sjsu.edu。</p></li>
+            <li class="service"><h2>ACE TRAIN和HWY 17 EXPRESS的折扣票</h2> <p class="service-description">SJSU学生和员工可享受的折扣票。</p></li>
+            <li class="service"><h2>国际学生身份证(ISIC)</h2> <p class="service-description">学生可以通过ISIC卡获得折扣。欲了解更多信息，请访问isic.org。</p></li>
+            <li class="service"><h2>邮寄服务</h2> <p class="service-description">使用适当的邮资邮寄的美国邮政邮件可以放置在我们方便的邮箱中。</p></li>
+            <li class="service"><h2>支票兑现</h2> <p class="service-description">中心可以兑现个人支票，最高金额为25美元。</p></li>
+            <li class="service"><h2>PG&E支付</h2> <p class="service-description">当天支付免费。仅限现金或支票。</p></li>
+            <li class="service"><h2>传真服务</h2> <p class="service-description">每页1美元，可以发送或接收传真。接收传真的页面需在交易时出席。</p></li>
+            <li class="service"><h2>公证服务</h2> <p class="service-description">每次签名15美元。请联系trinh.thai@sjsu.edu预约。</p></li>
+            <li class="service"><h2>汇款</h2> <p class="service-description">每笔汇款最高500美元，每笔汇款收取1美元手续费。仅限现金。</p></li>
+        </ul>
+    </div>
+    <!-- French Content -->
+    <div id="frenchContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/French language .m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>Contactez-nous : </h2> CONTACTEZ-NOUS: Diaz Compean Student Union, 1er étage, salle 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>Compte fiduciaire des organisations étudiantes sur le campus</h2> <p class="service-description">Les organisations étudiantes reconnues peuvent ouvrir un compte bancaire sur le campus. Traitement gratuit des chèques, comptabilité, commandes d'achat, et plus encore. Le GSC est ouvert en personne et en ligne.</p></li>
+            <li class="service"><h2>Programme de manuels scolaires A.S. abordable</h2> <p class="service-description">Les étudiants bénéficiant de bourses d'études peuvent obtenir un bon de 200 $ pour l'achat ou la location de manuels à la librairie SJSU.</p></li>
+            <li class="service"><h2>Collecte de la carte SmartPass Clipper</h2> <p class="service-description">Les étudiants récupérant leur carte SmartPass Clipper pour la première fois doivent soumettre un formulaire de demande en ligne, apporter leur identifiant Tower et payer 3 $. Pour plus d'informations, visitez ts.sjsu.edu.</p></li>
+            <li class="service"><h2>Billets à prix réduit pour ACE TRAIN et HWY 17 EXPRESS</h2> <p class="service-description">Billets à prix réduit pour les étudiants et le personnel de SJSU.</p></li>
+            <li class="service"><h2>Carte d'identité étudiante internationale (ISIC)</h2> <p class="service-description">Les étudiants peuvent bénéficier de réductions avec la carte ISIC. Pour plus d'informations, visitez isic.org.</p></li>
+            <li class="service"><h2>Service de courrier</h2> <p class="service-description">Le courrier des États-Unis affranchi correctement peut être déposé dans notre boîte aux lettres pratique.</p></li>
+            <li class="service"><h2>Encaissement de chèques</h2> <p class="service-description">Le centre peut encaisser des chèques personnels jusqu'à 25 $.</p></li>
+            <li class="service"><h2>Paiements PG&E</h2> <p class="service-description">Paiements le jour même sans frais. Espèces ou chèque uniquement.</p></li>
+            <li class="service"><h2>Service de télécopie</h2> <p class="service-description">Les pages peuvent être envoyées ou reçues par télécopieur pour 1 $ par page. Pour les pages reçues par télécopieur, la personne doit être présente lors de la transaction.</p></li>
+            <li class="service"><h2>Services de notarisation</h2> <p class="service-description">15 $ par signature. Contactez trinh.thai@sjsu.edu pour prendre rendez-vous.</p></li>
+            <li class="service"><h2>Transferts d'argent</h2> <p class="service-description">Montant maximum de transfert de 500 $ par commande avec des frais de 1 $ par commande. ESPÈCES SEULEMENT</p></li>
+        </ul>
+    </div>
+    <!-- Italian Content -->
+    <div id="italianContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/Italian language .m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>Contattaci: </h2> CONTATTACI: Diaz Compean Student Union, primo piano, stanza 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>Conto fiduciario dell'organizzazione studentesca del campus</h2> <p class="service-description">Le organizzazioni studentesche riconosciute possono aprire un conto bancario in campus. Elaborazione gratuita dei controlli, contabilità, ordini di acquisto e altro ancora. GSC è aperto di persona e online.</p></li>
+            <li class="service"><h2>Programma economico dei libri di testo A.S.</h2> <p class="service-description">Gli studenti che ricevono borse di studio possono ottenere un buono da $200 per l'acquisto o il noleggio di libri di testo presso il negozio di libri SJSU.</p></li>
+            <li class="service"><h2>Ritiro della carta SmartPass Clipper</h2> <p class="service-description">Gli studenti che ritirano per la prima volta la loro carta SmartPass Clipper devono compilare un modulo di richiesta online, portare il loro ID Tower e pagare $3. Per ulteriori informazioni, visitare ts.sjsu.edu.</p></li>
+            <li class="service"><h2>Biglietti scontati per ACE TRAIN e HWY 17 EXPRESS</h2> <p class="service-description">Biglietti scontati per studenti e personale di SJSU.</p></li>
+            <li class="service"><h2>Carta di identità studentesca internazionale (ISIC)</h2> <p class="service-description">Gli studenti possono ottenere sconti con la carta ISIC. Per ulteriori informazioni, visitare isic.org.</p></li>
+            <li class="service"><h2>Servizio di posta</h2> <p class="service-description">La posta degli Stati Uniti con adeguata affrancatura può essere lasciata nel nostro comodo cassetto della posta.</p></li>
+            <li class="service"><h2>Incasso di assegni</h2> <p class="service-description">Il centro può incassare assegni personali fino a $25.</p></li>
+            <li class="service"><h2>Pagamenti PG&E</h2> <p class="service-description">Pagamenti lo stesso giorno senza costi. Solo contanti o assegno.</p></li>
+            <li class="service"><h2>Servizio fax</h2> <p class="service-description">Le pagine possono essere inviate o ricevute via fax a $1 per pagina. Per le pagine ricevute via fax, la persona deve essere presente durante la transazione.</p></li>
+            <li class="service"><h2>Servizi di notarizzazione</h2> <p class="service-description">$15 per firma. Contattare trinh.thai@sjsu.edu per prenotare un appuntamento.</p></li>
+            <li class="service"><h2>Trasferimenti di denaro</h2> <p class="service-description">Importo massimo di trasferimento di $500 per ordine con una tassa di $1 per ordine. SOLO CONTANTI</p></li>
+        </ul>
+    </div>
+    <!-- German Content -->
+    <div id="germanContent" class="language-section">
+        <audio controls>
+            <source src="/Users/rafaelalunardelli/Desktop/Languages Project/German Audio .m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p><h2>Kontaktiere uns: </h2> KONTAKTIEREN SIE UNS: Diaz Compean Student Union, 1. Stock, Raum 1800 / (408) 924-6200; as.general-services@sjsu.edu</p>
+        <ul>
+            <li class="service"><h2>Treuhandkonto der Campus-Studentenorganisationen</h2> <p class="service-description">Anerkannte Studentenorganisationen können ein Bankkonto auf dem Campus eröffnen. Kostenlose Scheckverarbeitung, Buchhaltung, Bestellungen und mehr. GSC ist persönlich und online geöffnet.</p></li>
+            <li class="service"><h2>A.S. Erschwingliches Lehrbuchprogramm</h2> <p class="service-description">Studierende, die Stipendien erhalten, können einen Gutschein über 200 $ für den Kauf oder die Miete von Lehrbüchern im SJSU-Buchladen erhalten.</p></li>
+            <li class="service"><h2>Abholung der SmartPass Clipper Karte</h2> <p class="service-description">Studierende, die ihre SmartPass Clipper Karte zum ersten Mal abholen, müssen ein Online-Antragsformular einreichen, ihren Tower ID mitbringen und 3 $ bezahlen. Besuchen Sie ts.sjsu.edu für weitere Informationen.</p></li>
+            <li class="service"><h2>Rabattierte Tickets für ACE TRAIN und HWY 17 EXPRESS</h2> <p class="service-description">Rabattierte Tickets für SJSU Studierende und Mitarbeiter.</p></li>
+            <li class="service"><h2>Internationale Studentenidentitätskarte (ISIC)</h2> <p class="service-description">Studierende können mit der ISIC-Karte Rabatte erhalten. Besuchen Sie isic.org für weitere Informationen.</p></li>
+            <li class="service"><h2>Postdienst</h2> <p class="service-description">USPS mit angemessener Portogebühr kann in unserem praktisch gelegenen Briefkasten hinterlegt werden.</p></li>
+            <li class="service"><h2>Scheckeinlösung</h2> <p class="service-description">Das Zentrum kann persönliche Schecks bis zu 25 $ einlösen.</p></li>
+            <li class="service"><h2>PG&E Zahlungen</h2> <p class="service-description">Tägliche Zahlungen kostenlos. Nur Bargeld oder Scheck.</p></li>
+            <li class="service"><h2>Faxdienst</h2> <p class="service-description">Seiten können für 1 $ pro Seite per Fax gesendet oder empfangen werden. Für per Fax empfangene Seiten muss die Person während der Transaktion anwesend sein.</p></li>
+            <li class="service"><h2>Notardienste</h2> <p class="service-description">15 $ pro Unterschrift. Kontaktieren Sie trinh.thai@sjsu.edu zur Terminvereinbarung.</p></li>
+            <li class="service"><h2>Geldtransfers</h2> <p class="service-description">Maximaler Überweisungsbetrag von 500 $ pro Auftrag mit einer Gebühr von 1 $ pro Auftrag. NUR BARGELD</p></li>
+        </ul>
+    </div>
+    <script>
+        function showLanguage(language) {
+            // Hide all language sections
+            var languageSections = document.querySelectorAll('.language-section');
+            languageSections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected language section
+            var selectedLanguageSection = document.getElementById(language + 'Content');
+            if (selectedLanguageSection) {
+                selectedLanguageSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
